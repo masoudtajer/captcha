@@ -43,7 +43,6 @@
 			"masoud5070\\Test\\": "tests/"
 		}
 	},
-	"minimum-stability": "stable",
 	"extra": {
 		"laravel": {
 			"providers": [
