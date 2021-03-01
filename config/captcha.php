@@ -2,6 +2,7 @@
 
 return [
     'characters' => ['2', '3', '4', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'm', 'n', 'p', 'q', 'r', 't', 'u', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'M', 'N', 'P', 'Q', 'R', 'T', 'U', 'X', 'Y', 'Z'],
+
     'default' => [
         'length' => 9,
         'width' => 120,
@@ -11,6 +12,7 @@ return [
         'expire' => 60,
         'encrypt' => false,
     ],
+
     'math' => [
         'length' => 9,
         'width' => 120,
@@ -30,11 +32,13 @@ return [
         'fontColors' => ['#2c3e50', '#c0392b', '#16a085', '#c0392b', '#8e44ad', '#303f9f', '#f57c00', '#795548'],
         'contrast' => -5,
     ],
+
     'mini' => [
         'length' => 3,
         'width' => 60,
         'height' => 32,
     ],
+
     'inverse' => [
         'length' => 5,
         'width' => 120,
@@ -46,5 +50,11 @@ return [
         'blur' => 2,
         'invert' => true,
         'contrast' => -5,
+    ],
+
+    'route_path' => [
+        'laravel' => [
+            'api' => ''
+        ]
     ]
 ];
