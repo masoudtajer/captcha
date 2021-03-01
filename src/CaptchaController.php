@@ -2,6 +2,7 @@
 
 namespace Mews\Captcha;
 
+use App\Http\Requests\CaptchaRequest;
 use Exception;
 use Illuminate\Routing\Controller;
 
@@ -36,7 +37,7 @@ class CaptchaController extends Controller
      * @return array|mixed
      * @throws Exception
      */
-    public function getCaptchaApi(Captcha $captcha, string $config = 'default')
+    public function getCaptchaApi(CaptchaRequest $request, Captcha $captcha, string $config = 'default')
     {
         return $captcha->create($config, true);
     }
