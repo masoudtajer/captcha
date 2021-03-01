@@ -47,7 +47,7 @@ or
 
 Require this package with composer:
 ```
-composer require mews/captcha
+composer require masoud5070/captcha
 ```
 
 Update your packages with ```composer update``` or install with ```composer install```.
