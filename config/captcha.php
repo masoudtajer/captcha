@@ -56,5 +56,12 @@ return [
         'laravel' => [
             'api' => ''
         ]
+    ],
+
+    'validation' => [
+        'is_enabled' => false,
+        'rules' => [
+
+        ]
     ]
 ];

@@ -23,8 +23,15 @@ class CaptchaRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'uuid' => ['required', 'exists:temp_transactions,uuid'],
-        ];
+        if (config('captcha.validation.is_enabled')){
+            $rules = [];
+            foreach (config('captcha.validation.rules') as $key => $rule) {
+                $rules[$key] = $rule;
+            }
+
+            return $rules;
+        }
+
+        return [];
     }
 }
