@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Captcha;
+namespace Masoud5070\Captcha;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -8,7 +8,7 @@ use Illuminate\Validation\Factory;
 
 /**
  * Class CaptchaServiceProvider
- * @package Mews\Captcha
+ * @package Masoud5070\Captcha
  */
 class CaptchaServiceProvider extends ServiceProvider
 {
@@ -28,17 +28,17 @@ class CaptchaServiceProvider extends ServiceProvider
         if (strpos($this->app->version(), 'Lumen') !== false) {
             /* @var Router $router */
             $router = $this->app;
-            $router->get(config('captcha.route_path.lumen.api', 'captcha[/api/{config}]'), 'Mews\Captcha\LumenCaptchaController@getCaptchaApi');
-            $router->get(config('captcha.route_path.lumen.web', 'captcha[/{config}]'), 'Mews\Captcha\LumenCaptchaController@getCaptcha');
+            $router->get(config('captcha.route_path.lumen.api', 'captcha[/api/{config}]'), 'Masoud5070\Captcha\LumenCaptchaController@getCaptchaApi');
+            $router->get(config('captcha.route_path.lumen.web', 'captcha[/{config}]'), 'Masoud5070\Captcha\LumenCaptchaController@getCaptcha');
         } else {
             /* @var Router $router */
             $router = $this->app['router'];
             if ((double)$this->app->version() >= 5.2) {
-                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . '/{config?}', '\Mews\Captcha\CaptchaController@getCaptchaApi')->middleware('web');
-                //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Mews\Captcha\CaptchaController@getCaptcha')->middleware('web');
+                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptchaApi')->middleware('web');
+                //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptcha')->middleware('web');
             } else {
-                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . '/{config?}', '\Mews\Captcha\CaptchaController@getCaptchaApi');
-                //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Mews\Captcha\CaptchaController@getCaptcha');
+                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptchaApi');
+                //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptcha');
             }
         }
 
