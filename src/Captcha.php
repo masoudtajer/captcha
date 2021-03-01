@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Captcha;
+namespace Masoud5070\Captcha;
 
 /**
  * Laravel 5 & 6 Captcha package
@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Crypt;
 
 /**
  * Class Captcha
- * @package Mews\Captcha
+ * @package Masoud5070\Captcha
  */
 class Captcha
 {

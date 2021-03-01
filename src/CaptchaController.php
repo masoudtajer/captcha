@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Captcha;
+namespace Masoud5070\Captcha;
 
 use App\Http\Requests\CaptchaRequest;
 use Exception;
@@ -8,7 +8,7 @@ use Illuminate\Routing\Controller;
 
 /**
  * Class CaptchaController
- * @package Mews\Captcha
+ * @package Masoud5070\Captcha
  */
 class CaptchaController extends Controller
 {
