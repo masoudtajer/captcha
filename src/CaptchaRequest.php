@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace Masoud5070\Captcha;
 
 use Illuminate\Foundation\Http\FormRequest;
 

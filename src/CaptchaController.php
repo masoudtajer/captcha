@@ -2,7 +2,6 @@
 
 namespace Masoud5070\Captcha;
 
-use App\Http\Requests\CaptchaRequest;
 use Exception;
 use Illuminate\Routing\Controller;
 
