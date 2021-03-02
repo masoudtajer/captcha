@@ -63,5 +63,10 @@ return [
         'rules' => [
 
         ]
+    ],
+
+    'type' => [
+         'is_enabled' => false,
+         'value' => 'default'
     ]
 ];
