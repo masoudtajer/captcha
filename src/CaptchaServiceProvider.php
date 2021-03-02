@@ -24,7 +24,6 @@ class CaptchaServiceProvider extends ServiceProvider
             __DIR__ . '/../config/captcha.php' => config_path('captcha.php')
         ], 'config');
 
-        $captchaType = config('captcha.type.is_enabled') ? '/' . config('captcha.type.value') : null;
         // HTTP routing
         if (strpos($this->app->version(), 'Lumen') !== false) {
             /* @var Router $router */
@@ -35,10 +34,10 @@ class CaptchaServiceProvider extends ServiceProvider
             /* @var Router $router */
             $router = $this->app['router'];
             if ((double)$this->app->version() >= 5.2) {
-                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . $captchaType, '\Masoud5070\Captcha\CaptchaController@getCaptchaApi')->middleware('web');
+                $router->get(config('captcha.route_path.laravel.api', 'captcha/api'), '\Masoud5070\Captcha\CaptchaController@getCaptchaApi')->middleware('web');
                 //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptcha')->middleware('web');
             } else {
-                $router->get(config('captcha.route_path.laravel.api', 'captcha/api') . $captchaType, '\Masoud5070\Captcha\CaptchaController@getCaptchaApi');
+                $router->get(config('captcha.route_path.laravel.api', 'captcha/api'), '\Masoud5070\Captcha\CaptchaController@getCaptchaApi');
                 //$router->get(config('captcha.route_path.laravel.web', 'captcha') . '/{config?}', '\Masoud5070\Captcha\CaptchaController@getCaptcha');
             }
         }
