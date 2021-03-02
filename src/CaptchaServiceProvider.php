@@ -24,7 +24,7 @@ class CaptchaServiceProvider extends ServiceProvider
             __DIR__ . '/../config/captcha.php' => config_path('captcha.php')
         ], 'config');
 
-        $captchaType = config('captcha.type.is_enabled') ? '/' . config('captcha.type.value') : '/default';
+        $captchaType = config('captcha.type.is_enabled') ? '/' . config('captcha.type.value') : null;
         // HTTP routing
         if (strpos($this->app->version(), 'Lumen') !== false) {
             /* @var Router $router */

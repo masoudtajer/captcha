@@ -36,8 +36,10 @@ class CaptchaController extends Controller
      * @return array|mixed
      * @throws Exception
      */
-    public function getCaptchaApi(CaptchaRequest $request, Captcha $captcha, string $config = 'default')
+    public function getCaptchaApi(CaptchaRequest $request, Captcha $captcha)
     {
+        $config = $request->segment(count($request->segments())) == 'captcha' ? 'default' : $request->segment(count($request->segments()));
+
         return $captcha->create($config, true);
     }
 }
