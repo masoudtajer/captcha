@@ -1,7 +1,7 @@
 {
 	"name": "masoud5070/captcha",
-	"description": "Laravel 5 & 6 Captcha Package",
-	"keywords": ["laravel6 Captcha", "laravel6 Security", "laravel6 Captcha", "laravel5 Security", "Captcha"],
+	"description": "Laravel Captcha Package",
+	"keywords": ["laravel Captcha", "laravel Security", "laravel Captcha", "laravel Security", "Captcha"],
 	"license": "MIT",
 	"authors": [
 		{
@@ -12,13 +12,13 @@
 		}
 	],
 	"require": {
-		"php": "^7.2|^8.0",
+		"php": "^7.2|^8.0|^8.1|^8.2",
 		"ext-gd": "*",
-		"illuminate/config": "~5|^6|^7|^8|^9",
-		"illuminate/filesystem": "~5|^6|^7|^8|^9",
-		"illuminate/support": "~5|^6|^7|^8|^9",
-		"illuminate/hashing": "~5|^6|^7|^8|^9",
-		"illuminate/session": "~5|^6|^7|^8|^9",
+		"illuminate/config": "~5|^6|^7|^8|^9|^10|^11|^12",
+		"illuminate/filesystem": "~5|^6|^7|^8|^9|^10|^11|^12",
+		"illuminate/support": "~5|^6|^7|^8|^9|^10|^11|^12",
+		"illuminate/hashing": "~5|^6|^7|^8|^9|^10|^11|^12",
+		"illuminate/session": "~5|^6|^7|^8|^9|^10|^11|^12",
 		"intervention/image": "~2.5"
 	},
 	"require-dev": {

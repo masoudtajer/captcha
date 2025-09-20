@@ -1,4 +1,4 @@
-# Captcha for Laravel 5/6/7
+# Captcha for Laravel 5/6/7/8/9/10/11/12
 
 [![Build Status](https://travis-ci.org/mewebstudio/captcha.svg?branch=master)](https://travis-ci.org/mewebstudio/captcha) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/Masoud5070/captcha/v/stable.svg)](https://packagist.org/packages/Masoud5070/captcha)
@@ -6,7 +6,7 @@
 [![License](https://poser.pugx.org/Masoud5070/captcha/license.svg)](https://packagist.org/packages/Masoud5070/captcha)
 [![Total Downloads](https://poser.pugx.org/Masoud5070/captcha/downloads.svg)](https://packagist.org/packages/Masoud5070/captcha)
 
-A simple [Laravel 5/6](http://www.laravel.com/) service provider for including the [Captcha for Laravel](https://github.com/mewebstudio/captcha).
+A simple [Laravel 5/6/7/8/9/10/11/12](http://www.laravel.com/) service provider for including the [Captcha for Laravel](https://github.com/mewebstudio/captcha).
 
 for Laravel 4 [Captcha for Laravel Laravel 4](https://github.com/mewebstudio/captcha/tree/master-l4)
 
